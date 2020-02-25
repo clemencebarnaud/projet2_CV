@@ -1,0 +1,181 @@
+/* Stylesheet - Projet n°2 : Transformez votre CV en site web / Clémence Barnaud */
+
+@font-face {
+    font-family: 'sansation_lightlight';
+    src: url('fonts/Sansation-Light-webfont.eot');
+    src: url('fonts/Sansation-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Sansation-Light-webfont.woff2') format('woff2'),
+         url('fonts/Sansation-Light-webfont.woff') format('woff'),
+         url('fonts/Sansation-Light-webfont.ttf') format('truetype'),
+         url('fonts/Sansation-Light-webfont.svg#sansation_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html
+{
+	background-color: #ECEFF1;
+}
+
+body
+{
+	display: block;
+	width: 1190px;
+	background-color: white;
+	font-family: 'sansation_lightlight', 'helvetica neue';
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Mise en page du header */
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 325px;
+	margin:0;
+}
+
+/*Partie photo*/
+.cadre_photo
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 ;
+	min-width: 390px;
+	background-color: #26A69A;
+}
+
+
+.photo
+{
+	display: block;
+	margin:0;
+	border: 2px #004D40 solid;
+	border-radius: 50%
+}
+
+/*Partie nom*/
+.nom
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 800px;
+	margin-left: 50px;
+	background-color: white;
+}
+
+.prenom
+{
+	color:#26A69A;
+}
+
+#souligne
+{
+	border-bottom: 2px solid #26A69A;
+}
+
+h1
+{
+	margin: 0;
+	font-size: 3em;
+}
+
+h2
+{
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+
+/*Création d'un conteneur général*/
+
+.conteneur
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/* Mise en page du aside */
+
+aside
+{
+	display: flex;
+	flex-direction: column;
+	min-width: 390px;
+	background-color: #26A69A;
+	margin: 0;
+}
+
+.contact, .a_propos, .loisirs
+{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	
+}
+
+aside h3 
+{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin: 0;
+	background-color: #004D40;
+	color: #26A69A;
+	text-align: center;
+}
+
+aside p
+{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.logos
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 2em;
+}
+
+.loisirs .fas
+{
+	border: 3px black solid;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+/* Mise en page du main */
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 800px;
+	margin-left: 50px;
+	background-color: white;
+}
+
+.ecole1, .ecole2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.formation p
+{
+	margin-left: 100px;
+}
