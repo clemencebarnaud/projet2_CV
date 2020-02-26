@@ -123,6 +123,11 @@ aside
 	
 }
 
+.a_propos
+{
+	flex-grow: 1;
+}
+
 aside h3 
 {
 	padding-top: 6px;
