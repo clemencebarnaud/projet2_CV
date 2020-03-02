@@ -49,6 +49,7 @@ header
 	align-items: center;
 	margin: 0 ;
 	min-width: 390px;
+	width: 30%;
 	background-color: #26A69A;
 }
 
@@ -102,6 +103,12 @@ h2
 {
 	display: flex;
 	flex-direction: row;
+	font-size: 0.9em;
+}
+
+h3
+{
+	font-size: 1.5em;
 }
 
 /* Mise en page du aside */
@@ -111,16 +118,23 @@ aside
 	display: flex;
 	flex-direction: column;
 	min-width: 390px;
+	width: 30%;
 	background-color: #26A69A;
 	margin: 0;
 }
 
-.contact, .a_propos, .loisirs
+address, .a_propos, .loisirs
 {
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
-	
+	font-style: inherit;
+}
+
+address p
+{
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 .a_propos
@@ -132,7 +146,8 @@ aside h3
 {
 	padding-top: 6px;
 	padding-bottom: 6px;
-	margin: 0;
+	margin-top: 20px;
+	margin-bottom: : 20px;
 	background-color: #004D40;
 	color: #26A69A;
 	text-align: center;
@@ -151,13 +166,32 @@ aside p
 	justify-content: space-around;
 	flex-wrap: wrap;
 	font-size: 2em;
+	color: #004D40;
+	margin:6px 0px 26px 0px;
 }
 
-.loisirs .fas
+.loisirs i
 {
-	border: 3px black solid;
+	border: 2.5px #004D40 solid;
 	border-radius: 50%;
-	padding: 20px;
+}
+
+i[class*="laptop"]
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 11.4px;
+	padding-left: 11.4px; 
+}
+
+i[class*="globe"]
+{
+	padding:15px;
+}	
+
+i[class*="camera"]
+{
+	padding:15px;
 }
 
 /* Mise en page du main */
@@ -170,7 +204,32 @@ main
 	align-items: flex-start;
 	width: 800px;
 	margin-left: 50px;
+	margin-right: 50px;
 	background-color: white;
+}
+
+.ligne
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 700px;
+	border-bottom: 2px solid #26A69A;
+}
+
+main h3
+{
+	margin: 0;
+}
+
+main i
+{
+	font-size: 1.8em;
+	padding-right: 20px;
 }
 
 .ecole1, .ecole2
@@ -184,3 +243,38 @@ main
 {
 	margin-left: 100px;
 }
+
+.experience1, .experience2, .experience3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.experience p
+{
+	margin-left: 100px;
+}
+
+.recommandations div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.recommandations p
+{
+	padding-right: 200px;
+}
+
+
+ul{list-style: none}
+
+li::before{
+	content: url('dot-circle-regular.svg'); 
+	color :#26A69A;
+	width: 2em;
+}
+
+
