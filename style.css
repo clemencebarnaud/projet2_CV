@@ -21,7 +21,7 @@ html
 body
 {
 	display: block;
-	width: 1190px;
+	max-width: 1190px;
 	background-color: white;
 	font-family: 'sansation_lightlight', 'helvetica neue';
 	margin-right: auto;
@@ -38,6 +38,7 @@ header
 	flex-direction: row;
 	justify-content: flex-start;
 	height: 325px;
+	width: 100%;
 	margin:0;
 }
 
@@ -48,8 +49,7 @@ header
 	justify-content: center;
 	align-items: center;
 	margin: 0 ;
-	min-width: 390px;
-	width: 30%;
+	width: 33%;
 	background-color: #26A69A;
 }
 
@@ -57,6 +57,7 @@ header
 .photo
 {
 	display: block;
+	width:220px;
 	margin:0;
 	border: 2px #004D40 solid;
 	border-radius: 50%
@@ -69,8 +70,9 @@ header
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	width: 800px;
+	width: 67%;
 	margin-left: 50px;
+	margin-right: 50px;
 	background-color: white;
 }
 
@@ -117,8 +119,7 @@ aside
 {
 	display: flex;
 	flex-direction: column;
-	min-width: 390px;
-	width: 30%;
+	width: 33%;
 	background-color: #26A69A;
 	margin: 0;
 }
@@ -200,9 +201,9 @@ main
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start;
-	width: 800px;
+	width: 67%;
 	margin-left: 50px;
 	margin-right: 50px;
 	background-color: white;
@@ -237,11 +238,17 @@ main i
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	line-height: 3em;
+}
+
+.formation, .experience, .recommandations
+{
+	flex-grow: 1;
 }
 
 .formation p
 {
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .experience1, .experience2, .experience3
@@ -249,32 +256,58 @@ main i
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	line-height: 3em;
 }
 
 .experience p
 {
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .recommandations div
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .recommandations p
 {
-	padding-right: 200px;
+	width: 240px;
+	padding-right: 100px;
 }
 
+li
+{
+	padding-left: 1em;
+	width: 190px;
+}
 
-ul{list-style: none}
+ul.actuel
+{
+	list-style: none
+}
 
-li::before{
-	content: url('dot-circle-regular.svg'); 
+ul.actuel>li::before
+{
+	content: '\29BF'; 
 	color :#26A69A;
-	width: 2em;
+	width: 1em;
+	display: inline-block;
+	margin-left: -1em;
 }
 
+ul
+{
+	list-style: none;
+	padding: 0;
+}
 
+li::before
+{
+	content: '\25CF';
+	color: #26A69A;
+	width: 1em;
+	display: inline-block;
+	margin-left: -1em;
+}
