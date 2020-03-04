@@ -20,8 +20,8 @@ html
 
 body
 {
-	display: block;
 	max-width: 1190px;
+	width: 100%;
 	background-color: white;
 	font-family: 'sansation_lightlight', 'helvetica neue';
 	margin-right: auto;
@@ -35,11 +35,7 @@ body
 header
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
 	height: 325px;
-	width: 100%;
-	margin:0;
 }
 
 /*Partie photo*/
@@ -50,14 +46,14 @@ header
 	align-items: center;
 	margin: 0 ;
 	width: 33%;
+	min-width: 384px;
 	background-color: #26A69A;
 }
 
 
 .photo
 {
-	display: block;
-	width:220px;
+	max-width:220px;
 	margin:0;
 	border: 2px #004D40 solid;
 	border-radius: 50%
@@ -69,10 +65,9 @@ header
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	width: 67%;
 	margin-left: 50px;
 	margin-right: 50px;
+	width: 67%;
 	background-color: white;
 }
 
@@ -106,11 +101,13 @@ h2
 	display: flex;
 	flex-direction: row;
 	font-size: 0.9em;
+	width: 100%;
 }
 
 h3
 {
 	font-size: 1.5em;
+	margin: 0;
 }
 
 /* Mise en page du aside */
@@ -120,16 +117,22 @@ aside
 	display: flex;
 	flex-direction: column;
 	width: 33%;
+	min-width: 384px;
 	background-color: #26A69A;
 	margin: 0;
 }
 
-address, .a_propos, .loisirs
+.contact, .a_propos, .loisirs
 {
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
 	font-style: inherit;
+}
+
+address, .descriptif, .logos
+{
+	margin: 20px 50px 20px 50px;
 }
 
 address p
@@ -153,17 +156,9 @@ aside h3
 {
 	padding-top: 6px;
 	padding-bottom: 6px;
-	margin-top: 20px;
-	margin-bottom: : 20px;
 	background-color: #004D40;
 	color: #26A69A;
 	text-align: center;
-}
-
-aside p
-{
-	padding-right: 50px;
-	padding-left: 50px;
 }
 
 .logos
@@ -174,7 +169,6 @@ aside p
 	flex-wrap: wrap;
 	font-size: 2em;
 	color: #004D40;
-	margin:6px 0px 26px 0px;
 }
 
 .loisirs i
@@ -209,9 +203,9 @@ main
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	width: 67%;
 	margin-left: 50px;
 	margin-right: 50px;
+	width: 67%;
 	background-color: white;
 }
 
@@ -237,7 +231,14 @@ main i
 {
 	font-size: 1.8em;
 	padding-right: 20px;
+	color: #26A69A;
 }
+
+.années
+{
+	padding-left: 12px;
+}
+
 
 .formation, .experience, .recommandations
 {
