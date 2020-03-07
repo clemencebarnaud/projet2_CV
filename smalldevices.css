@@ -1,141 +1,74 @@
 
-// Small devices (landscape phones, less than 768px)
+/* Small devices (landscape phones, less than 768px)*/
 
-@media all and (max-width: 767px) 
+@media all and (max-width: 767px)
 {
 	body
-{
-	width: auto;
-	font-size: 1.2em;
+	{
+		max-width: 797px;
+	}
+
+	header
+	{
+		height: 215px;
+	}
+
+	.cadre_photo
+	{
+		width: 33%;
+		min-width: 263px;
+	}
+
+
+	.photo
+	{
+		max-width:150px;
+	}
+
+	/*Partie nom*/
+	.nom
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 67%;
+		min-width: 534px;
+		background-color: #26A69A;
+	}
+
+	.prenom
+	{
+		color: white;
+	}
+
+	#souligne
+	{
+		border-bottom: 2px solid white;
+	}
+
+	h1
+	{
+		font-size: 2em;
+	}
+
+	h2
+	{
+		margin-top: 0.5em;
+		margin-bottom: 0;
+		font-size: 1.2em;
+	}
+
+	.conteneur
+	{
+		flex-direction: column-reverse;
+		margin-top: 20px;
+	}
+
+	aside
+	{
+		display: flex;
+		flex-direction: row;
+		background-color: #26A69A;
+	}
 }
 
-/* Mise en page du header */
-
-header
-{
-	height: 125px;
-}
-
-/*Partie photo*/
-.cadre_photo
-{
-	width: 33%;
-	max-width: 100px;
-	background-color: white;
-}
-
-
-.photo
-{
-	max-width:100px;
-}
-
-/*Partie nom*/
-.nom
-{
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 67%;
-	max-width: 200px;
-}
-
-h1
-{
-	font-size: 2em;
-}
-
-/*Création d'un conteneur général*/
-
-.conteneur
-{
-	display: flex;
-	flex-direction: column-reverse;
-	width: 100%;
-}
-
-/* Mise en page du aside */
-
-aside
-{
-	display: flex;
-	flex-direction: row;
-	width: auto;
-}
-
-.contact, .a_propos, .loisirs
-{
-	display: flex;
-	flex-direction: column;
-	text-align: justify;
-	font-style: normal;
-}
-
-address, .descriptif, .logos
-{
-	margin: 20px 50px 20px 50px;
-}
-
-address p
-{
-	margin-top: 6px;
-	margin-bottom: 6px;
-	font-style: normal;
-}
-
-.a_propos
-{
-	flex-grow: 1;
-}
-
-.a_propos p
-{
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
-aside h3 
-{
-	padding-top: 6px;
-	padding-bottom: 6px;
-	background-color: #004D40;
-	color: #26A69A;
-	text-align: center;
-}
-
-.logos
-{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	font-size: 2em;
-	color: #004D40;
-}
-
-.loisirs i
-{
-	border: 2.5px #004D40 solid;
-	border-radius: 50%;
-}
-
-i[class*="laptop"]
-{
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 11.4px;
-	padding-left: 11.4px; 
-}
-
-i[class*="globe"]
-{
-	padding:15px;
-}	
-
-i[class*="camera"]
-{
-	padding:15px;
-}
-
-
-
-}
 
