@@ -1,7 +1,22 @@
 
 // Large devices (desktops, less than 1200px)
 
-@media (max-width: 1199px) 
+@media screen and (max-width: 1199px) 
 {
+	body
+	{
+		max-width: 1199px;
+		font size: 1.2em;
+		color: red;
+	}
+
+	header
+	{
+		height: 125px;
+	}
 	
+	.cadre_photo
+	{
+		min-width: 150px;
+		background-color: white;
 }

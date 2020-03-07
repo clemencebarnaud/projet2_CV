@@ -20,7 +20,7 @@ html
 
 body
 {
-	width: 1190px;
+	max-width: 1190px;
 	background-color: white;
 	font-family: 'sansation_lightlight', 'helvetica neue';
 	font-size: 0.9em;
@@ -65,9 +65,10 @@ header
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: 50px;
-	margin-right: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 	width: 67%;
+	min-width: 706px;
 	background-color: white;
 }
 
@@ -199,9 +200,10 @@ main
 {
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
-	margin-right: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 	width: 67%;
+	min-width: 706px;
 	background-color: white;
 }
 
@@ -211,7 +213,6 @@ main
 	padding-top: 6px;
 	padding-bottom: 6px;
 	margin-bottom: 20px;
-	width: 700px;
 	border-bottom: 2px solid #26A69A;
 }
 
@@ -235,23 +236,12 @@ main i
 
 .formation, .experience, .recommandations
 {
-	flex-grow: 1;
 	margin-bottom: 50px;
-}
-
-.formation p
-{
-	margin-left: 50px;
 }
 
 .ecole1, .ecole2
 {
 	display: flex;
-}
-
-.experience p
-{
-	margin-left: 50px;
 }
 
 .experience1, .experience2, .experience3

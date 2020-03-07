@@ -1,7 +1,22 @@
 
 // Medium devices (tablets, less than 992px)
 
-@media (max-width: 991px) 
+@media screen and (max-width: 991px) 
 {
+	body
+	{
+		max-width: 991px;
+		font size: 1.2em;
+		color: blue;
+	}
+
+	header
+	{
+		height: 125px;
+	}
 	
+	.cadre_photo
+	{
+		min-width: 150px;
+		background-color: white;
 }
