@@ -1,38 +1,45 @@
 
-/* Small devices (landscape phones, less than 768px)*/
+/* Small devices (portrait phones, less than 415px)*/
 
-@media all and (max-width: 767px)
+@media all and (max-width: 415px)
 {
 	body
 	{
-		max-width: 797px;
+		width: 415px;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 0;
 	}
 
 	header
 	{
-		height: 215px;
+		display: flex;
+		flex-direction: column;
+		height: auto;
 	}
 
 	.cadre_photo
 	{
-		width: 33%;
-		min-width: 263px;
+		width: auto;
+		min-width: 415px;
+		padding-top: 20px;
 	}
 
 
 	.photo
 	{
-		max-width:150px;
+		max-width:100px;
 	}
 
 	/*Partie nom*/
 	.nom
 	{
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 67%;
-		min-width: 534px;
+		padding:20px 0px 20px 0px;
+		width: auto;
+		min-width: 415px;
 		background-color: #26A69A;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.prenom
@@ -47,14 +54,14 @@
 
 	h1
 	{
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 
 	h2
 	{
 		margin-top: 0.5em;
 		margin-bottom: 0;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	.conteneur
@@ -63,12 +70,122 @@
 		margin-top: 20px;
 	}
 
+	h3
+	{
+		font-size: 1.1em;
+	}
+
+	/* Mise en page du aside */
+
 	aside
 	{
-		display: flex;
-		flex-direction: row;
-		background-color: #26A69A;
+		width: auto;
+		min-width: 375px;
 	}
+
+	aside h3 
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	address, .descriptif, .logos
+	{
+		margin: 20px 20px 20px 20px;
+	}
+
+	/* Mise en page du main */
+
+	main
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0;
+		width: auto;
+		min-width: 375px;
+	}
+
+	main i
+	{
+		font-size: 1.5em;
+	}
+
+	.années
+	{
+		padding-left: 10px;
+	}
+
+
+	.formation, .experience, .recommandations
+	{
+		margin-bottom: 20px;
+	}
+
+	.ecole1, .ecole2
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nom_ecole, .nom_experience
+	{
+		padding-left: 50px;
+		padding-bottom: 20px;
+	}
+
+	.experience1, .experience2, .experience3
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.p1
+	{
+		font-size: 0.9em;
+	}
+
+	.p2
+	{
+		font-size: 0.9em;
+		line-height: 0em;
+	}
+
+	.p3
+	{
+
+	}
+
+	li
+	{	
+		width: auto;
+		font-weight: bold;
+	}
+
+	ul
+	{
+		margin: 0;
+	}
+
+	li::before
+	{
+		padding-right: 10px;
+		padding-bottom: 10px;
+		float: inline-start;
+	}
+
+	ul.liste_description li
+	{
+		width: auto;
+		font-weight: normal;
+	}
+
+	.recommandations p
+	{
+		width: 140px;
+		padding-right: 50px;
+	}
+
+
 }
 
 

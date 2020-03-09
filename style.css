@@ -296,7 +296,7 @@ li::before
 ul.liste_description
 {
 	list-style: none;
-	margin-left: 50px;
+	margin-left: 0px;
 	width: auto;
 }
 
