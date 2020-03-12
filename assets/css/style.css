@@ -141,6 +141,16 @@ address p
 	font-style: normal;
 }
 
+a
+{
+	color: black;
+}
+
+a:hover
+{
+	color: white;
+}
+
 .a_propos
 {
 	flex-grow: 1;
@@ -244,7 +254,7 @@ main i
 	display: flex;
 }
 
-.experience1, .experience2, .experience3
+.job
 {
 	display: flex;
 	flex-direction: row;
